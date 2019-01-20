@@ -1,0 +1,57 @@
+$white: #fff; 
+$coral: #DD4E3D;
+$hover: #DFDFDF;
+
+/* Nav for index-page */ 
+
+/* Nav for login/register-page */ 
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+  }
+  
+  li.nav {
+    float: left;
+    background-color: $white;
+    font-size: 130%;
+    margin-left: 2%;
+    margin-top: 2%;
+  }
+  
+  li.nav a {
+    display: block;
+    color: $coral;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+  }
+  
+  li.nav a:hover:not(.active) {
+    background-color: $hover;
+  }
+
+  li.logout{
+    float: right;
+    background-color: $coral;
+    font-size: 130%;
+    margin-right: 2%;
+    margin-top: 2%;
+  } li.logout a{ 
+    display: block;    
+    color: $white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+  } li.logout a:hover{ 
+    background-color: darken( $coral, 10% );
+  }
+  
+      /* MOBILTELEFONER */ 
+@media screen and (max-width: 499px){
+li.nav, li.logout{
+  font-size: 100%;
+}
+}

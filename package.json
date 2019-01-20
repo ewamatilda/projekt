@@ -1,0 +1,22 @@
+{
+  "name": "filmlistan2019",
+  "version": "1.0.0",
+  "description": "Projektwebbplats i kursen \"Webbutveckling III\", DT173G",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matilda Viklund, mavi1700",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-css": "^4.2.1",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "gulp-watch": "^5.0.1",
+    "imagemin": "^6.1.0"
+  }
+}

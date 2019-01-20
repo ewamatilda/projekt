@@ -1,0 +1,87 @@
+$background-font: #fff; 
+$p-color: #DFDFDF;
+$label: #1C1917;
+$opacity: rgba(28, 25, 23, 0.7);
+
+$h1: 'Julius Sans One', sans-serif;
+$h2: 'Carrois Gothic SC', sans-serif;
+$p: 'Quicksand', sans-serif;
+
+h1{ 
+    font-family: $h1; 
+    font-size: 300%;
+    background-color: $background-font; 
+    padding: 1%; 
+    width: 50%;
+    text-align: center;
+    margin-left: 24%;
+}
+
+h2{
+    font-family: $h2; 
+    text-align: center; 
+    background-color: $opacity; 
+    color: $p-color;
+    font-weight:normal;
+    width: 70%;
+    margin-left: 15%; 
+} h2.mypages{
+    width:80%;
+    margin-left: 10%;
+}
+
+li{
+    font-family: $h2; 
+    font-size: 130%; 
+}
+
+li.nav{
+    font-size: 130%; 
+}
+p{
+    color: $p-color;
+    font-family: $p;
+    font-size: 120%;
+    text-align: center; 
+    padding: 1%;
+}
+
+input{
+   @extend p; 
+   text-align: left;
+}
+
+input.submit{
+    font-family: $p; 
+    color: $label;
+}
+
+
+label{
+    color: $label;
+    font-family: $p;
+} label.filmlist{
+    font-size: 120%;
+}
+
+#filmlist{
+    font-family: $p; 
+}
+
+/*SURFPLATTOR
+@media screen and (max-width: 1060px) and (min-width: 800px) {
+   
+    }
+    ¨*/ 
+
+    /* MOBILTELEFONER */ 
+@media screen and (max-width: 700px)  {
+    h1{
+        font-size: 230%;
+    }
+
+    h1.reg{
+        width: 98%; 
+        margin-left: 0%;
+    }
+}

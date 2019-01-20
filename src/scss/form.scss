@@ -1,0 +1,76 @@
+$color:  #1C1917;
+$coral:  #DD4E3D;
+$grey:   rgb(167, 167, 167);
+$white:  #fff; 
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+form{
+    margin-left: 24%;
+    width: 50%;
+    margin-bottom: 10%;
+    input{
+        padding: 3%; 
+        width: 98%;
+        border-radius: 4px;
+        color: $color;
+    }
+    input.submit, input.btn{
+        width: 106%; 
+        margin-top: 2%;
+        border: 1px solid $grey;
+        text-align:center;
+        font-weight: bold;
+        color: $color;
+        font-size: 120%;
+
+    }input.submit:hover, input.btn:hover{
+        background-color: $coral;
+    }
+
+    label.reg{
+        text-align: left; 
+        width: 20%;
+        color: $color;
+    }
+
+    input.confirm{
+        width:5%;
+    }
+    
+}
+
+form.filmlist{
+    width: 80%;
+    margin-left: 10%;
+
+    label.filmlist{
+        color: $white;
+        background-color: $color;
+        padding: 1%;
+
+       
+    } input.filmlist{
+        width: 92%;
+        margin-top: 4%;
+        margin-bottom: 2%;
+    } input.btnfilm{
+        text-align: center; 
+        width: 99%;
+    }
+} 
+
+    /* MOBILTELEFONER */ 
+    @media screen and (max-width: 800px) {
+       form input.confirm{
+            width:10%;
+        }
+
+        form label.reg{
+            font-size: 80%;
+        }
+       
+    }
+    

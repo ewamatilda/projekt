@@ -1,0 +1,262 @@
+/* Matilda Viklund - mavi
+Webbutveckling III, DT173G 
+Projektarbete, Filmlistan */ 
+
+body {
+  background-color: #DFDFDF; }
+
+#container {
+  background: url("../images/background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 1024px;
+  max-width: 100%;
+  margin: 0px auto;
+  margin-top: 5%; }
+
+.col-1 {
+  padding-top: 10%;
+  padding-bottom: 1%; }
+
+.col-01 {
+  margin-top: 10%;
+  width: 60%;
+  margin-left: 20%;
+  background-color: rgba(223, 223, 223, 0.8); }
+
+.col-2 {
+  width: 100%;
+  padding-bottom: 15%; }
+
+.col-03 {
+  width: 100%; }
+
+.col-3 {
+  width: 40%;
+  margin-left: 0%;
+  float: left; }
+
+.col-4 {
+  width: 60%;
+  float: left; }
+
+@media screen and (max-width: 1060px) and (min-width: 400px) {
+  #container {
+    max-width: 100%; }
+  .col-01 {
+    width: 80%;
+    max-width: 80%;
+    margin-left: 10%; } }
+
+/* MOBILTELEFONER */
+@media screen and (max-width: 800px) {
+  .col-3, .col-4 {
+    width: 80%;
+    margin-left: 10%; } }
+
+@charset "UTF-8";
+h1 {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 300%;
+  background-color: #fff;
+  padding: 1%;
+  width: 50%;
+  text-align: center;
+  margin-left: 24%; }
+
+h2 {
+  font-family: "Carrois Gothic SC", sans-serif;
+  text-align: center;
+  background-color: rgba(28, 25, 23, 0.7);
+  color: #DFDFDF;
+  font-weight: normal;
+  width: 70%;
+  margin-left: 15%; }
+
+h2.mypages {
+  width: 80%;
+  margin-left: 10%; }
+
+li {
+  font-family: "Carrois Gothic SC", sans-serif;
+  font-size: 130%; }
+
+li.nav {
+  font-size: 130%; }
+
+p, input {
+  color: #DFDFDF;
+  font-family: "Quicksand", sans-serif;
+  font-size: 120%;
+  text-align: center;
+  padding: 1%; }
+
+input {
+  text-align: left; }
+
+input.submit {
+  font-family: "Quicksand", sans-serif;
+  color: #1C1917; }
+
+label {
+  color: #1C1917;
+  font-family: "Quicksand", sans-serif; }
+
+label.filmlist {
+  font-size: 120%; }
+
+#filmlist {
+  font-family: "Quicksand", sans-serif; }
+
+/*SURFPLATTOR
+@media screen and (max-width: 1060px) and (min-width: 800px) {
+   
+    }
+    ¨*/
+/* MOBILTELEFONER */
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 230%; }
+  h1.reg {
+    width: 98%;
+    margin-left: 0%; } }
+
+footer {
+  background-color: #1C1917;
+  clear: both; }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset; }
+
+form {
+  margin-left: 24%;
+  width: 50%;
+  margin-bottom: 10%; }
+  form input {
+    padding: 3%;
+    width: 98%;
+    border-radius: 4px;
+    color: #1C1917; }
+  form input.submit, form input.btn {
+    width: 106%;
+    margin-top: 2%;
+    border: 1px solid #a7a7a7;
+    text-align: center;
+    font-weight: bold;
+    color: #1C1917;
+    font-size: 120%; }
+  form input.submit:hover, form input.btn:hover {
+    background-color: #DD4E3D; }
+  form label.reg {
+    text-align: left;
+    width: 20%;
+    color: #1C1917; }
+  form input.confirm {
+    width: 5%; }
+
+form.filmlist {
+  width: 80%;
+  margin-left: 10%; }
+  form.filmlist label.filmlist {
+    color: #fff;
+    background-color: #1C1917;
+    padding: 1%; }
+  form.filmlist input.filmlist {
+    width: 92%;
+    margin-top: 4%;
+    margin-bottom: 2%; }
+  form.filmlist input.btnfilm {
+    text-align: center;
+    width: 99%; }
+
+/* MOBILTELEFONER */
+@media screen and (max-width: 800px) {
+  form input.confirm {
+    width: 10%; }
+  form label.reg {
+    font-size: 80%; } }
+
+/* Nav for index-page */
+/* Nav for login/register-page */
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+li.nav {
+  float: left;
+  background-color: #fff;
+  font-size: 130%;
+  margin-left: 2%;
+  margin-top: 2%; }
+
+li.nav a {
+  display: block;
+  color: #DD4E3D;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none; }
+
+li.nav a:hover:not(.active) {
+  background-color: #DFDFDF; }
+
+li.logout {
+  float: right;
+  background-color: #DD4E3D;
+  font-size: 130%;
+  margin-right: 2%;
+  margin-top: 2%; }
+
+li.logout a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none; }
+
+li.logout a:hover {
+  background-color: #c53422; }
+
+/* MOBILTELEFONER */
+@media screen and (max-width: 499px) {
+  li.nav, li.logout {
+    font-size: 100%; } }
+
+#filmlist {
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: 10%; }
+
+#filmlist td, #filmlist th {
+  background-color: #ddd;
+  border: 1px solid #c53422;
+  padding: 8px; }
+
+#filmlist tr:nth-child(even) {
+  background-color: #f2f2f2; }
+
+#filmlist tr:hover {
+  background-color: #ddd; }
+
+#filmlist th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #DD4E3D;
+  color: white; }
+
+td.delete a {
+  text-decoration: none;
+  color: #1C1917;
+  font-weight: bold; }
+
+td.delete a:hover {
+  color: #c53422; }
+
+/* MOBILTELEFONER */
+@media screen and (max-width: 800px) {
+  table#filmlist {
+    margin-left: 0%;
+    width: 100%;
+    margin-bottom: 5%; } }
